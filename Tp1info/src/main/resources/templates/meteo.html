@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meteo</title>
+</head>
+<body>
+    <div th:replace="Navbar"></div>
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <ul class="list-group list-group-flush">
+                <h1>Coordonnées</h1>
+            <li class="list-group-item">
+                <p th:text="'Il fait ' + ${temp2m} + '°C'"/>
+            </li>
+            <li class="list-group-item">
+                <p th:text="'Latitude : ' + ${latitude}" />
+            </li>
+            <li class="list-group-item">
+                <p th:text="'Longitude : ' + ${longitude}" />
+            </li>
+            </ul>
+        </div>
+</body>
+</html>
